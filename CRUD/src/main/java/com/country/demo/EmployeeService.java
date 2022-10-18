@@ -13,7 +13,7 @@ public class EmployeeService {
 
 	@Autowired
 	private EmployeeRepo employeeRepo;
-	
+	//@GetMapping("/sample2")
 	public List<EmployeeEntity> list(){
 		
 		return (List<EmployeeEntity>) employeeRepo.findAll();

@@ -12,7 +12,7 @@ package com.country.demo;
 
 		@Autowired
 		@GetMapping("/school") 
-		public List<SchoolEntity> getSample(){
+		public List<SchoolEntity> getschool(){
 			ArrayList<SchoolEntity> transformedvalues=new ArrayList<SchoolEntity>();
 	    	for(SchoolEntity emt:er.findAll()) {
 	    		SchoolEntity temp=new SchoolEntity();
