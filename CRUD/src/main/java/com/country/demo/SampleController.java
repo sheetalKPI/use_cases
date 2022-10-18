@@ -17,9 +17,10 @@ public class SampleController {
     	for(EmployeeEntity emt:er.findAll()) {
     		EmployeeEntity temp=new EmployeeEntity();
     		temp.setId(emt.getId());
-    		if(emt.getEmployee_name().contains("$")) {
-    			temp.setEmployee_name(emt.getEmployee_name().replaceAll("\\$", ""));
-    		}
+    		temp.setEmployee_name(emt.getEmployee_name());
+    		//if(emt.getEmployee_name().contains("$")) {
+    		//	temp.setEmployee_name(emt.getEmployee_name().replaceAll("\\$", ""));
+    		//}
     		transformedvalues.add(temp);
     	}
     	return transformedvalues;
