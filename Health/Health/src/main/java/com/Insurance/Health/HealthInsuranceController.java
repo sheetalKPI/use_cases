@@ -1,7 +1,7 @@
 package com.Insurance.Health;
 
 
-import java.util.ArrayList;
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,9 +12,9 @@ public class HealthInsuranceController {
 	@Autowired
 	private HealthInsuranceRepo HIr;
 	@GetMapping("/details") 
-    public ArrayList<HealthInsuranceEntity> getSample(){
+    public List<HealthInsuranceEntity> getSample(){
     	    	
-    	return (ArrayList<HealthInsuranceEntity>) HIr.getinfo1();
+    	return  HIr.getjoin();
     }
 
 }
