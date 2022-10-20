@@ -19,7 +19,7 @@ public class ControllerVehicle {
   public List<CarEntity> getCar(){
 	  return car.getjoin();
 	  }
-  @GetMapping("truck")
+  @GetMapping("/truck")
   public List<TruckEntity> getTruck(){
 	  return truck.getjoin();
   }

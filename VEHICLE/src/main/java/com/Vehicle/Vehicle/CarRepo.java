@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 
 
 public interface CarRepo extends JpaRepository<CarEntity, Integer>{
-		@Query(value = "select * from car c join truck t on c.no_of_tyres = t.no_of_tyres")	
+		@Query(value = "select * from car c join truck t on c.no_of_tyres = t.no_of_tyres",nativeQuery=true)	
 		public List<CarEntity> getjoin();
 }

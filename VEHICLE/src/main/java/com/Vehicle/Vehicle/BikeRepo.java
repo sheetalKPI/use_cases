@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface BikeRepo  extends JpaRepository<BikeEntity, Integer>{
 
-	@Query(value = "select * from bike b join car c on b.no_of_tyres = c.no_of_tyres")	
+	@Query(value = "select * from bike b join car c on b.no_of_tyres = c.no_of_tyres",nativeQuery=true)	
 	public List<CarEntity> getjoin();
  
 
