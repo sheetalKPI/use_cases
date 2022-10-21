@@ -15,13 +15,13 @@ public class HealthInsuranceEntity
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer Client_id;
     private String Client_name;
-    private String Policy_plan;
+    private String Policy_name;
     private Integer age;
-    public Integer getAge() {
-		return age;
-	}
-	
-    public Integer getClient_id() {
+    private Integer Insured_amount;
+    private String Discount_perc;
+    private Integer Premium_amount;
+    private Integer Years;
+	public Integer getClient_id() {
 		return Client_id;
 	}
 	public void setClient_id(Integer client_id) {
@@ -33,11 +33,14 @@ public class HealthInsuranceEntity
 	public void setClient_name(String client_name) {
 		Client_name = client_name;
 	}
-	public String getPolicy_plan() {
-		return Policy_plan;
+	public String getPolicy_name() {
+		return Policy_name;
 	}
-	public void setPolicy_plan(String policy_plan) {
-		Policy_plan = policy_plan;
+	public void setPolicy_name(String policy_name) {
+		Policy_name = policy_name;
+	}
+	public Integer getAge() {
+		return age;
 	}
 	public void setAge(Integer age) {
 		this.age = age;
@@ -48,8 +51,23 @@ public class HealthInsuranceEntity
 	public void setInsured_amount(Integer insured_amount) {
 		Insured_amount = insured_amount;
 	}
-	private Integer Insured_amount;
-   {
-
-}
+	public String getDiscount_perc() {
+		return Discount_perc;
+	}
+	public void setDiscount_perc(String discount_perc) {
+		Discount_perc = discount_perc;
+	}
+	public Integer getPremium_amount() {
+		return Premium_amount;
+	}
+	public void setPremium_amount(Integer premium_amount) {
+		Premium_amount = premium_amount;
+	}
+	public Integer getYears() {
+		return Years;
+	}
+	public void setYears(Integer years) {
+		Years = years;
+	}
+    
 }
