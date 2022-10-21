@@ -16,7 +16,7 @@ public class HealthInsuranceController {
 		return  HIr.getjoin();
     }
 	
-  @GetMapping("/Discount_perc/{result}/{Premium_amount")
+  @GetMapping("/Discount_perc/{result}/{Premium_amount}")
   public int Discount_perc(@PathVariable String result, @PathVariable int Premium_amount)
   {
 	  final String more = "morethanfive";
