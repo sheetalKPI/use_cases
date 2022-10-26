@@ -1,5 +1,7 @@
 package com.kpi.microservice.currancyexchangeexampleservice.demo;
 
-public class CurrancyConversionSampleBean {
+public @interface RibbonClient {
+
+	String name();
 
 }
